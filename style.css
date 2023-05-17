@@ -23,6 +23,10 @@ body {
   font-family: Square721 BT !important;
 }
 
+root {
+  --fav-blue: rgb(1, 93, 184);
+}
+
 /* -------------------- CALCULATOR TABLE ----------------------- */
 
 section {
@@ -35,8 +39,8 @@ section {
 }
 
 section .btns button:hover span {
-  border-color: #66ee66;
-  color: #66ee66;
+  border-color: var(--fav-blue);
+  color: var(--fav-blue);
   transition: 0.5s;
 }
 
@@ -58,7 +62,7 @@ section table #numBtn {
   padding: 1rem;
   width: 100%;
   margin: none;
-  border: 1px solid #66ee66;
+  border: 1px solid var(--fav-blue);
   border-radius: 5px;
 }
 
@@ -67,7 +71,7 @@ section table #numBtn:hover {
 }
 
 section table .equal-sign {
-  background-color: #66ee66;
+  background-color: var(--fav-blue);
   color: white;
 }
 section table #clear-btn {
