@@ -25,6 +25,15 @@ body {
 
 /* -------------------- CALCULATOR TABLE ----------------------- */
 
+section {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 section .btns button:hover span {
   border-color: #66ee66;
   color: #66ee66;
