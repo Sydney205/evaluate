@@ -23,7 +23,7 @@ body {
   font-family: Square721 BT !important;
 }
 
-root {
+:root {
   --fav-blue: rgb(1, 93, 184);
 }
 
