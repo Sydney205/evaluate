@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./Public/CSS/index.css" />
+    <title>X-View</title>
+  </head>
+  <body class="home-body">
+    <section>
+
+      <!-- CALCULATOR... -->
+      
+      <table class="calculator">
+        <tr>
+          <td colspan="3">
+            <input class="screen" type="text" id="calc-screen" disabled />
+          </td>
+          <td>
+            <input type="button" value="C" id="clear-btn" onclick="reset()"/>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="button" value="1" id="numBtn" onclick="display('1')"/></td>
+          <td><input type="button" value="2" id="numBtn" onclick="display('2')"/></td>
+          <td><input type="button" value="3" id="numBtn" onclick="display('3')"/></td>
+          <td><input type="button" value="/" id="numBtn" onclick="display('/')"/></td>
+        </tr>
+        <tr>
+          <td><input type="button" value="4" id="numBtn" onclick="display('4')"/></td>
+          <td><input type="button" value="5" id="numBtn" onclick="display('5')"/></td>
+          <td><input type="button" value="6" id="numBtn" onclick="display('6')"/></td>
+          <td><input type="button" value="-" id="numBtn" onclick="display('-')"/></td>
+        </tr>
+        <tr>
+          <td><input type="button" value="7" id="numBtn" onclick="display('7')"/></td>
+          <td><input type="button" value="8" id="numBtn" onclick="display('8')"/></td>
+          <td><input type="button" value="9" id="numBtn" onclick="display('9')"/></td>
+          <td><input type="button" value="+" id="numBtn" onclick="display('+')"/></td>
+        </tr>
+        <tr>
+          <td><input type="button" value="." id="numBtn" onclick="display('.')"/></td>
+          <td><input type="button" value="0" id="numBtn" onclick="display('0')"/></td>
+
+          <!-- Equal sign button will trigger the calculate() function when clicked -->
+          <td><input type="button" value="=" id="numBtn" onclick="calculate()" class='equal-sign'/></td>
+
+          <td><input type="button" value="*" id="numBtn" onclick="display('*')"/></td>
+        </tr>
+      </table>
+    </section>
+    <script src="./Scripts/index.js"></script>
+  </body>
+</html>
