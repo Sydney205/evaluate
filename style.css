@@ -52,6 +52,7 @@ section table {
   transform: scale(1.5);
   border-radius: 20px;
   box-shadow: 0 0 10px solid gray;
+  gap: 3px;
 }
 
 section table #calc-screen {
@@ -59,6 +60,7 @@ section table #calc-screen {
   padding: 1rem;
   border: 2px solid gray;
   border-radius: 5px;
+  color: white;
 }
 
 section table #numBtn {
@@ -66,21 +68,16 @@ section table #numBtn {
   width: 100%;
   margin: none;
   /* border: 1px solid var(--fav-blue); */
+  border: none;
   border-radius: 5px;
-  box-shadow: 0 0 10px gray;
+  box-shadow: 0 0 10px #000;
 }
 
-section table #numBtn:focus {
-  transform: scale(0.93);
-}
-
-@keyframes clicked {
-  from {
-    transform: scale(0.93);
-  }
-  to {
-    transform: scale(1);
-  }
+section table #numBtn:hover {
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #000;
+  transform: scale(0.95);
 }
 
 section table .equal-sign {
